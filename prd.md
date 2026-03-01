@@ -1327,3 +1327,31 @@ The following is the definitive scope for the first working build. Everything el
 *This PRD represents the complete specification for OpenCardio Phase 1 MVP and Phase 2. It is a living document. All implementation decisions that deviate from this spec should be recorded in the Open Questions Log.*
 
 *Regulatory disclaimer: OpenCardio is intended for research and clinical decision support, not as a regulated medical device in Phase 1. Clinical decisions remain the responsibility of the treating clinician.*
+
+### References:
+
+https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/hono/index.md
+https://docs.convex.dev/client/react
+https://docs.convex.dev/client/react/optimistic-updates
+https://docs.convex.dev/functions/query-functions
+https://docs.convex.dev/functions/mutation-functions
+https://docs.convex.dev/functions/actions
+https://docs.convex.dev/functions/validation
+https://docs.convex.dev/database
+https://docs.convex.dev/database/reading-data/
+https://docs.convex.dev/database/reading-data/indexes/
+https://docs.convex.dev/database/reading-data/indexes/indexes-and-query-perf
+https://docs.convex.dev/database/reading-data/filters
+https://docs.convex.dev/database/writing-data
+https://docs.convex.dev/database/schemas
+https://docs.convex.dev/database/pagination
+https://labs.convex.dev/auth/setup/manual
+https://labs.convex.dev/auth/setup
+https://labs.convex.dev/auth/config/oauth/google
+https://docs.convex.dev/file-storage/upload-files
+https://docs.convex.dev/file-storage/store-files
+https://docs.convex.dev/file-storage/serve-files
+https://docs.convex.dev/file-storage/delete-files
+https://docs.convex.dev/file-storage/file-metadata
+https://docs.convex.dev/search/vector-search
+https://docs.convex.dev/search/text-search
