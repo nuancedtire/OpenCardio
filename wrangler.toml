@@ -1,0 +1,13 @@
+name = "opencardio"
+main = "worker/index.ts"
+compatibility_date = "2024-11-12"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+not_found_handling = "single-page-application"
+
+[vars]
+# Set runtime env vars in Cloudflare dashboard (not here)
+# AI_VPS_URL = "https://your-vps.example.com"
+# AI_VPS_SECRET = "your-secret"
