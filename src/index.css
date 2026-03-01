@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-50 min-h-screen;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Standard ECG grid background for waveform containers */
+  .ecg-grid {
+    background-color: #fafaf5;
+    background-image:
+      /* Large grid lines (5mm) */
+      linear-gradient(to right, #f9a8a8 1px, transparent 1px),
+      linear-gradient(to bottom, #f9a8a8 1px, transparent 1px),
+      /* Small grid lines (1mm) */
+      linear-gradient(to right, #fde8e8 1px, transparent 1px),
+      linear-gradient(to bottom, #fde8e8 1px, transparent 1px);
+    background-size:
+      25px 25px,
+      25px 25px,
+      5px 5px,
+      5px 5px;
+  }
+}
+
+@layer components {
+  /* Clinical alert severity classes */
+  .alert-critical {
+    @apply bg-red-600 border-red-500 text-white;
+  }
+  .alert-warning {
+    @apply bg-amber-500 border-amber-400 text-white;
+  }
+  .alert-safe {
+    @apply bg-green-700 border-green-600 text-white;
+  }
+  .alert-info {
+    @apply bg-slate-700 border-slate-600 text-slate-100;
+  }
+
+  /* Pulsing border for critical alerts */
+  .pulse-critical {
+    animation: pulse-border 2s ease-in-out infinite;
+  }
+
+  /* Touch-friendly button base */
+  .btn-touch {
+    @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
+  }
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+  }
+}
